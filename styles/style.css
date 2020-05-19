@@ -1,0 +1,186 @@
+/* Cascading Style Sheet
+Theme Title : MyNewTheme
+Original Work : Simon Gaillard.
+Version : 0.1
+This template is released as an open source web design, which means that you
+are free to use it in any way you want to - and edit it in any way you want to.
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+html {
+  box-sizing: border-box;
+  font-family: sans-serif;
+  font-size: calc(14px + 0.25vw);
+  line-height: 1.55;
+  cursor: default;
+}
+
+body {
+    margin: 0;
+    background-color: #2c2c2c;
+    color: #f7f7f7;
+}
+
+main {
+  max-width: 900px;
+  min-width: 475px;
+  margin: auto;
+}
+
+article,
+aside,
+footer,
+header,
+nav,
+section,
+figcaption,
+figure,
+main {
+  display: block;
+}
+
+footer {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  font-size: calc(8px + 0.25vw);
+  border-top: 2px solid #6f4e37;
+}
+
+footer a {
+  color: #6f4e37;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+nav {
+  background-image: url("https://source.unsplash.com/random/1920x620/?abstract");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  margin: auto;
+  padding: 1em;
+  display: block;
+}
+
+.upper {
+  max-width: 900px;
+  margin: auto;
+}
+
+.clock, .greeting, .searchBox {
+  display: block;
+  text-align: center;
+  line-height: normal;
+}
+
+.clock p {
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.greeting {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+}
+
+.greeting strong {
+  font-weight: 700;
+}
+
+#time {
+  font-size: 3em;
+  font-weight: 700;
+}
+#today {
+  font-size: 1.5em;
+}
+#greet {
+  font-size: 2em;
+}
+
+.searchBox input[type="text"] {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 1.5em;
+  line-height: 2.5em;
+  height: 2.5em;
+  margin: 0;
+  padding: 1em;
+  width: 100%;
+  border: 0;
+  border-radius: 10px;
+  outline: none;
+  color: grey;
+}
+
+.weather {
+  margin: 0.5em;
+  border: 1px solid #6f4e37;
+  border-radius: 10px;
+  background-color: #cdc5b4;
+}
+
+.links {
+  margin: 0.5em;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.links h2 {
+  text-align: center;
+  font-size: 1.25em;
+  margin: 0.25em;
+  border-bottom: 1px solid grey;
+}
+
+.links div {
+  font-family: "Raleway", sans-serif;
+  font-weight: 300;
+  padding: 0.5em;
+  display: block;
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+}
+
+.links div:hover {
+  border-radius: 5px;
+  background-color: #6f4e37;
+}
+.links ul, .links li {
+  margin: 0;
+}
+
+.links a {
+  display: block;
+  text-decoration: none;
+  color: #f7f7f7;
+}
+
+.links a::before {
+  content: "\25FE";
+  margin-right: 1em;
+  margin-left: 0.5em;
+}
+
+.links a:hover {
+  color: #f4ac45;
+}
+
+.expander {
+  text-align: center;
+  width: 1em;
+  height: 1em;
+  line-height: 1em;
+  font-weight: 700;
+  float: left;
+  border: 1px solid #f7f7f7;
+  border-radius: 50%;
+}

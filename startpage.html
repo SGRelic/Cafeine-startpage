@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
+    <title>Start Page</title>
+    <meta name="description" content="My custom start page" />
+    <meta name="author" content="Simon Gaillard" />
+    <meta name="keywords" content="startpage" />
+    <link rel="stylesheet" type="text/css" href="styles/style.css" />
+    <style type="text/css" class="init"></style>
+  </head>
+  <body>
+      <nav>
+        <div class="upper">
+          <div class="clock">
+            <p><span id="time"></span></p>
+            <p><span id="today"></span></p>
+          </div>
+          <div class="greeting">
+            <p><span id="greet">Hello, <strong>Simon</strong> !</span></p>
+          </div>
+          <div class="searchBox">
+            <form action="https://duckduckgo.com/" method="get">
+              <input type="text" name="q" placeholder="Search on DuckDuckGo..." autofocus/>
+            </form>
+          </div>
+        </div>
+      </nav>
+    <main>
+      <div class="weather">
+        <a class="weatherwidget-io" href="https://forecast7.com/en/45d831d26/limoges/"
+          data-label_1="LIMOGES"
+          data-label_2="WEATHER"
+          data-days="5"
+          data-font="Open Sans"
+          data-textcolor="#6f4e37">LIMOGES WEATHER</a>
+        <script>
+          !function(d,s,id) {
+            var js,fjs=d.getElementsByTagName(s)[0];
+            if(!d.getElementById(id)){
+              js=d.createElement(s);
+              js.id=id;
+              js.src='https://weatherwidget.io/js/widget.min.js';
+              fjs.parentNode.insertBefore(js,fjs);
+            }
+          }
+          (document,'script','weatherwidget-io-js');
+        </script>
+      </div>
+      <div class="links">
+        <div>
+          <h2>Chat</h2>
+            <a href="https://discordapp.com/">Discord</a>
+            <a href="https://meet.jit.si/">Jitsi Meet</a>
+        </div>
+        <div>
+          <h2>Dev</h2>
+            <a href="https://www.freecodecamp.org/news/">FreeCodeCamp</a>
+            <a href="https://github.com/">Github</a>
+            <a href="https://developer.mozilla.org/en-US/">MDN</a>
+            <a href="https://docs.python.org/3/">Python 3</a>
+            <a href="https://regex101.com/">Regex101</a>
+            <a href="http://stackoverflow.com/">Stack Overflow</a>
+        </div>
+        <div>
+          <h2>eStore</h2>
+            <a href="https://www.amazon.fr/">Amazon</a>
+            <a href="https://www.fnac.com/">Fnac</a>
+            <a href="https://www.paypal.com/signin?country.x=FR&locale.x=fr_FR">PayPal</a>
+        </div>
+        <div>
+          <h2>Games</h2>
+            <a href="http://www.gamingonlinux.com/">Gaming on linux</a>
+            <a href="https://itch.io/">Itch.io</a>
+            <a href="http://store.steampowered.com/">Steam</a>
+        </div>
+        <div>
+          <h2>Graphics</h2>
+            <a href="https://www.artstation.com/">Art Station</a>
+            <a href="https://unsplash.com/">Unsplash</a>
+        </div>
+        <div>
+          <h2>Mail</h2>
+            <a href="https://mail.google.com/mail/u/0/">Gmail</a>
+            <a href="https://mail.protonmail.com/inbox?welcome=true">Pronton Mail</a>
+        </div>
+        <div>
+          <h2>Music</h2>
+            <a href="https://mynoise.net/">MyNoise</a>
+            <a href="https://www.radiofreccia.it/">Radio Freccia</a>
+            <a href="https://www.spotify.com/fr/">Spotify</a>
+        </div>
+        <div>
+          <h2>News</h2>
+            <a href="https://medium.com/">Medium</a>
+            <a href="https://www.lemonde.fr/">Le Monde</a>
+            <a href="https://www.omgubuntu.co.uk/">OMG! Ubuntu!</a>
+        </div>
+        <div>
+          <h2>Social Media</h2>
+            <a href="https://www.facebook.com/">Facebook</a>
+            <a href="https://fr.pinterest.com/">Pinterest</a>
+            <a href="https://www.reddit.com/">Reddit</a>
+        </div>
+        <div>
+          <h2>Video</h2>
+            <a href="https://www.netflix.com/browse">Netflix</a>
+            <a href="https://www.primevideo.com/">Prime Video</a>
+            <a href="http://www.youtube.com/">YouTube</a>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <p>Copyright (C) 2020 Simon Gaillard.</p>
+      <p>
+        Permission is granted to copy, distribute and/or modify this document
+        under the terms of the <a href="https://spdx.org/licenses/MIT.html">MIT License</a>.
+      </p>
+    </footer>
+    <script src="scripts/clock.js"></script>
+    <script src="scripts/expand.js"></script>
+  </body>
+</html>
